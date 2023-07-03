@@ -17,13 +17,15 @@ export default function App() {
   }
   };
   return (
-    <main>
-      <div className="App">
+    <div>
         <input type="number" onChange={heightChange} />m
+      <br/>
         <input type="number" onChange={weightChange} />kg
+      <br/>
         <button onClick={calculate} >Calculate</button>
+      <br/>
+      Result is -- 
         {bmi}
-      </div>
-    </main>
+    </div>
   )
 }
