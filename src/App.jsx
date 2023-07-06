@@ -13,16 +13,25 @@ export default function App() {
   };
   const calculate = () =>{
     if(!height==0){
-    setbmi(weight/(height*height));
+    setbmi(weight*10000/(height*height));
   }
   };
   return (
     <div>
-        <input type="number" onChange={heightChange} />m
+
+      
+      <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Height</span>
+  <input type="number" onChange={heightChange} />
+        <span class="input-group-text">cm</span>
+</div>
+      <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Weight</span>
+  <input type="number" onChange={weightChange} />
+        <span class="input-group-text">Kg</span>
+</div>
       <br/>
-        <input type="number" onChange={weightChange} />kg
-      <br/>
-        <button onClick={calculate} >Calculate</button>
+        <button class="btn btn-primary" onClick={calculate} >Calculate</button>
       <br/>
       Result is -- 
         {bmi}
