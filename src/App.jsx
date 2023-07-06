@@ -11,6 +11,7 @@ export default function App() {
   const weightChange = (event) =>{
     setWeight(event.target.value);
   };
+  var isvis = false;
   const calculate = () =>{
     if(!height==0){
     setbmi(weight*10000/(height*height));
@@ -18,7 +19,7 @@ export default function App() {
   };
   return (
     <div>
-
+      <h1>BMI Calculator</h1><br/>
       
       <div class="input-group mb-3">
   <span class="input-group-text" id="basic-addon1">Height</span>
@@ -33,8 +34,10 @@ export default function App() {
       <br/>
         <button class="btn btn-primary" onClick={calculate} >Calculate</button>
       <br/>
-      Result is -- 
+      <h4>
+      Result is ->
         {bmi}
+      </h4>
     </div>
   )
 }
