@@ -21,18 +21,18 @@ export default function App() {
     <div>
       <h1>BMI Calculator</h1><br/>
       
-      <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">Height</span>
+      <div className="input-group mb-3">
+  <span className="input-group-text" id="basic-addon1">Height</span>
   <input type="number" onChange={heightChange} />
-        <span class="input-group-text">cm</span>
+        <span className="input-group-text">cm</span>
 </div>
-      <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">Weight</span>
+      <div className="input-group mb-3">
+  <span className="input-group-text" id="basic-addon1">Weight</span>
   <input type="number" onChange={weightChange} />
-        <span class="input-group-text">Kg</span>
+        <span className="input-group-text">Kg</span>
 </div>
       <br/>
-        <button class="btn btn-primary" onClick={calculate} >Calculate</button>
+        <button className="btn btn-primary" onClick={calculate} >Calculate</button>
       <br/>
       <h4>
       Result is ->
