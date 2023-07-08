@@ -1,5 +1,6 @@
 import './App.css'
 import {useState} from "react";
+import {BmiIntro} from './Components/accor'
 
 export default function App() {
   const [height,setHeight] = useState(0.0);
@@ -35,9 +36,15 @@ export default function App() {
         <button className="btn btn-primary" onClick={calculate} >Calculate</button>
       <br/>
       <h4>
-      Result is ->
-        {bmi}
+      BMI = 
+        {bmi} kg/m2
       </h4>
+      <br/>
+      
+      <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight. </p>
+      <h3>Healthy BMI Range</h3>
+      <div>18.5 kg/m2 - 25 kg/m2</div>
+<BmiIntro />
     </div>
   )
 }
