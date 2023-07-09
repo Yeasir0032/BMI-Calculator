@@ -45,6 +45,9 @@ export default function App() {
       <h3>Healthy BMI Range</h3>
       <div>18.5 kg/m2 - 25 kg/m2</div>
 
+
+      
+
     </div>
   )
 }
