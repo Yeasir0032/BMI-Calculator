@@ -3,3 +3,7 @@ main {
   vertical-align: center;
   line-height: 100vh
 }
+body {
+  background-color: skyblue;
+  font-family:serif;
+}
